@@ -38,5 +38,3 @@ client = bigquery.Client.from_service_account_json('access.json')
 dataset_ref = client.get_dataset('bigquery-public-data.cms_synthetic_patient_data_omop')
 table_ref = dataset_ref.table('procedure_occurrence')
 table = client.get_table(table_ref)
-
-time.sleep(300)
